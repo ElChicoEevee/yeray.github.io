@@ -1,52 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!--Se ajusta dependiendo del dispositivo-->
-<meta name="viewport" content="width=device-width" content="height=device-height">
-<!--Para modificar el estilo via CSS-->
+<meta name="viewport" content="width=device-width">
 <style>
-<!--Añadir una Fuente-->
 @font-face {
-<!--Nombre de la fuente-->
     font-family: 'Helvetica Neue LT Pro';
     src: url('HelveticaNeueLTPro-XBlkCn.woff2') format('woff2'),
         url('HelveticaNeueLTPro-XBlkCn.woff') format('woff');
     font-weight: 900;
-<!--Estilo de la fuente-->
     font-style: normal;
     font-display: swap;
 }
-<!--Estilos para los <th> <p> <h1>-->
 th, p, h1 {
-<!--Elegimos la fuente con esto-->
   font-family: 'Helvetica Neue LT Pro';
-<!--Alínea el texto a donde queramos ponerlo ahora mismo está centrado-->
   text-align: center;
-<!--Color del Texto-->
   color: #f1faee;
-<!--Tamaño de la fuente-->
   font-size: 20px;
 }
 table, th, td {
-<!--Tamaño del borde de la tabla-->
   border: 3px solid black;
   border-collapse: collapse;
 }
-<!--para centrar el contenido automaticamente-->
 .center {
   margin-left: auto;
   margin-right: auto;
 }
-<!--Para hacer oculta la división Modulos-->
-#Modulos {
+#myDIV {
   visibility: hidden;
 }
 td {
   font-family: 'Helvetica Neue LT Pro';
-<!--Color del fondo del espacio-->
   background-color: #f1faee;
   text-align: center;
   color: #1d3557;
+}
+th {
+  background-color: #1d3557;
 }
 body {
     background: #000 url(moduleimg/background.png) no-repeat center center;
@@ -58,7 +47,6 @@ body {
     height:100%;
 }
 </style>
-<!--Titulo de la Pestaña-->
 	<title>ElChicoEevee</title>
 </head>
 <body>
@@ -74,17 +62,10 @@ body {
   <img src="workingon/len.png" alt="Len" style="width:120px;height:120px;">
   <img src="workingon/ichika.png" alt="Ichika" style="width:120px;height:120px;">
  <br>Rin and Len Vivid Bad Squad outfits*<br><br>
-
-<!--Botón-->
  <button onclick="myFunction()" font="Helvetica Neue LT Pro"><b>Click here to see the Module List</button>
-
-<!--Una division-->
- <div id="Modulos">
-<!--Esto es para añadir una tabla-->
+ <div id="myDIV">
 <table class="center" style="width:35%">
-<!--Los <tr> marcan la fila-->
   <tr>
-<!--Los <td> marcan la columna-->
     <td><img src="moduleimg/hime.png" style="width:155px;height:190px;"><br>MEIKA Hime✅</td>
     <td><img src="moduleimg/mikoto.png" style="width:155px;height:190px;"><br>MEIKA Mikoto✅</td>
     <td><img src="moduleimg/ann.png" style="width:155px;height:190px;"><br>Shiraishi Ann✅</td>
@@ -106,11 +87,9 @@ body {
 </table>
 </div>
 
-<!--Para añadir scripts-->
 <script>
-<!--Para hacer que el botón oculte o muestre el contenido-->
 function myFunction() {
-  var x = document.getElementById("Modulos");
+  var x = document.getElementById("myDIV");
   if (x.style.visibility === "visible") {
     x.style.visibility = "hidden";
   } else {
@@ -118,5 +97,6 @@ function myFunction() {
   }
 }
 </script>
+
 </body>
 </html>
