@@ -51,7 +51,7 @@ th {
   color: #f1faee;
 }
 body {
-    background: #000 url(moduleimg/background.png) no-repeat center center;
+    background: #000 url(background.png) no-repeat center center;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
