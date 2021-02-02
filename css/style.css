@@ -1,51 +1,36 @@
-/*Añadir una Fuente*/
 @font-face {
-/*Nombre de la fuente*/
     font-family: 'Helvetica Neue LT Pro';
-/*Archivo o url donde encontrar la fuente para utilizarla en la fuente*/
     src: url('HelveticaNeueLTPro-XBlkCn.woff2') format('woff2'),
         url('HelveticaNeueLTPro-XBlkCn.woff') format('woff');
     font-weight: 900;
-/*Estilo de la fuente*/
     font-style: normal;
     font-display: swap;
 }
-/*Estilos para los th p h1*/
 p, h1 {
-/*Elegimos la fuente con esto*/
   font-family: 'Helvetica Neue LT Pro';
-/*Alínea el texto a donde queramos ponerlo ahora mismo está centrado*/
   text-align: center;
-/*Color del Texto*/
   color: #f1faee;
-/*Tamaño de la fuente*/
   font-size: 20px;
 }
 table, th, td {
-/*Tamaño del borde de la tabla*/
   border: 3px solid black;
   border-collapse: collapse;
 }
-/*para centrar el contenido automaticamente*/
 .center {
   margin-left: auto;
   margin-right: auto;
 }
-/*Para añadir un estilo a una division*/
 #Modulos {
-/*Para ponerle en oculta*/
   visibility: hidden;
 }
 td {
   font-family: 'Helvetica Neue LT Pro';
-/*Color del fondo del espacio*/
   background-color: #f1faee;
   text-align: center;
   color: #1d3557;
 }
 th {
   font-family: 'Helvetica Neue LT Pro';
-/*Color del fondo del espacio*/
   background-color: #1d3557;
   text-align: center;
   color: #f1faee;

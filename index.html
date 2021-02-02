@@ -1,49 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!--Se ajusta dependiendo del dispositivo-->
 <meta name="viewport" content="width=device-width" content="height=device-height">
-<!--Para modificar el estilo via CSS-->
 <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
-<!--Titulo de la Pestaña-->
 	<title>ElChicoEevee</title>
 </head>
 <body>
 <p>
 <a style="font-size:15px" href="download/bringitonsekai.rar">Click me!</a>
-<!--Titulo 1-->
  <h1><img src="moduleimg/banner.png" style="width:822px;height:220px;"></h1>
 
-<!--Inicio de Parrafo-->
  <p>Click the Zigzagoon for Download MVEE (24/09/2020)
  <br>
 
-<!--Imagen con un archivo de hipervinculo lo cual permite descargarlo al hacer click-->
  <a href="download/mvee.rar">
   <img src="img/zig.gif" alt="Download Button" style="width:270px;height:225px;">
 </a>
 <br>
-<!--Saltos de línea para hacer una separación-->
 <p> <br>Right now I am working on...<br>
 
-<!--Imagenes con una resolución añadida-->
   <img src="workingon/rin.png" alt="Rin" style="width:210px;height:280px;"> <img src="workingon/len.png" alt="Len" style="width:210px;height:280px;"> <img src="workingon/ichika.png" alt="Ichika" style="width:224px;height:280px;"><br><br>
 
-<!--Botón para ocultar y mostrar la tabla-->
  <button onclick="myFunction()" font="Helvetica Neue LT Pro"><b>Click here to see the Module List</button>
 
-<!--Una division-->
  <div id="Modulos">
 
-<!--Esto es para añadir una tabla que a su vez está centrada y con un tamaño determinado-->
 <table class="center" style="width:35%">
-<!--Los <tr> marcan la fila-->
   <tr>
-<!-- <th> marcan la celda con un título-->
     <th>MEIKA Hime✅</th><th>MEIKA Mikoto✅</th><th>Shiraishi Ann✅</th>
   </tr>
   <tr>
-<!--Los <td> marcan la celda de cierta fila-->
     <td><img src="moduleimg/hime.png" style="width:155px;height:190px;"></td>
     <td><img src="moduleimg/mikoto.png" style="width:155px;height:190px;"></td>
     <td><img src="moduleimg/ann.png" style="width:155px;height:190px;"></td>
@@ -75,11 +61,8 @@
 </table>
 </div>
 
-<!--Para añadir scripts-->
 <script>
-//Para hacer que el botón oculte o muestre el contenido
 function myFunction() {
-//El documento donde queremos que interactue
   var x = document.getElementById("Modulos");
   if (x.style.visibility === "visible") {
     x.style.visibility = "hidden";
